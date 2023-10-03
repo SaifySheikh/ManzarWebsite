@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Railway", sans-serif;
+}
+.Home{
+  background-image: url('../assets/homebackground.jpg');
+  background-size:cover;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+body{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .outer{
+  display: flex;
+  justify-content: left;
+  padding-top: 250px;
+  
+}
+.wrapper .card{
+  background: D9D9D9;
+  width: 530px;
+  display: flex;
+  align-items: left;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  justify-content: space-between;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  animation: animate 12s linear infinite;
+  animation-delay: calc(var(--delay) * 3s);
+}
+
+.wrapper .card:last-child{
+  animation-delay: calc((var(--delay) - 4) * 3s);
+}
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%, 20%{
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%, 40%{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%, 60%{
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%, 100%{
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+    background-color:#F0EBEB;
+  }
+}
+.card .content{
+  display: flex;
+  align-items: center;
+}
+.wrapper .card .img{
+  height: 100px;
+  width: 150px;
+  left: -5px;
+  background: #fff;
+  border-radius: 0%;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 0%;
+  object-fit: cover;
+}
+.card .details{
+  margin-left: 40px;
+}
+.details span{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1115px) {
+
+  .wrapper .outer {
+    width: 30%;
+    margin: 0 auto;
+  }
+    .wrapper .outer .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40vw;
+        height: 40vh;
+      }
+
+    .wrapper .outer .card .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .wrapper .card .img {
+        width: 25vw;
+      }
+      .card .details{
+        margin-left:0 ;
+      }
+}

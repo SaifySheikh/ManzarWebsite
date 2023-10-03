@@ -1,0 +1,131 @@
+.faculty-content {
+    background: linear-gradient(180deg, #3a0154 0.01%, #b693f7 99.99%, rgba(255, 255, 255, 0) 100%);
+    padding: 3rem 2rem;
+
+ } 
+
+ .faculty-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+    align-items: center;
+    padding-bottom: 2rem;
+ }
+
+ #faculty-head-info {
+    color: white;
+    font-size: 25px;
+}
+
+#faculty-head-info h4 {
+    font-size: 45px;
+}
+
+ #faculty-head-box {
+    padding: 2rem;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+    background-color: rgb(255, 243, 243);
+    transition: all 0.5s ease-in-out;
+}
+
+#faculty-head-box:hover{
+    transform:scale(1.08);
+}
+
+ 
+.img{
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+.linkedin{
+    height: 2rem;
+    width: 2.2rem;
+    margin-right: 1.3rem;
+}
+
+.gmail{
+    height: 2rem;
+    width: 2.2rem;
+    margin-right: 1.3rem;
+}
+
+.gmail:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.linkedin:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#qualification {
+    padding: 1rem 2.5rem;
+    color: white;
+    background: linear-gradient(180deg, #3a0154 0.01%, #a071f8 99.99%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #ffffff;
+    filter: drop-shadow(74px 90px 45px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    text-align:left;
+    font-size: 20px;
+}
+
+#achievement {
+    padding: 1rem 2.5rem;
+    color: white;
+    background: linear-gradient(180deg, #3a0154 0.01%, #a071f8 99.99%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #ffffff;
+    filter: drop-shadow(74px 90px 45px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    text-align:left;
+    font-size: 20px;
+}
+
+#spec {
+    padding: 1rem 2.5rem;
+    color: white;
+    background: linear-gradient(180deg, #3a0154 0.01%, #a071f8 99.99%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #ffffff;
+    filter: drop-shadow(74px 90px 45px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    text-align:left;
+    font-size: 20px;
+}
+
+
+
+
+#spec:hover {
+    background: linear-gradient(180deg, #3a0154 0.01%, #bc9cf8 99.99%, rgba(255, 255, 255, 0) 100%);
+    font-weight: bold;
+    transform: scale(1.02);
+}
+
+#achievement:hover {
+    background: linear-gradient(180deg, #3a0154 0.01%, #bc9cf8 99.99%, rgba(255, 255, 255, 0) 100%);
+    font-weight: bold;
+    transform: scale(1.02);
+}
+
+#qualification:hover {
+    background: linear-gradient(180deg, #3a0154 0.01%, #bc9cf8 99.99%, rgba(255, 255, 255, 0) 100%);
+    transform: scale(1.02);
+    font-weight: bold;
+}
+
+
+@media screen and ( max-width:769px ){
+    .faculty-head {
+        flex-direction: column;
+    }
+}
+
